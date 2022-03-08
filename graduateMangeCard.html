@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> ادارة بطاقة خريج</title>
+
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/plugins/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/animate.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/style.css" rel="stylesheet">
+
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/jtable/themes/metro/inspania-navyblue/jtable.css" rel="stylesheet" />
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" />
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/jquery-ui/jquery-ui-1.custom-jtable.css" rel="stylesheet" />
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/jQuery-Validation-Engine-3.1.0/css/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/custom.css" rel="stylesheet">
+
+
+</head>
+
+<body class="rtls">
+
+<div id="wrapper">
+
+<nav class="IUstyle navbar-default navbar-static-side  mt-5" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+					
+
+            <li>
+                <a href=""><i class="fa fa-home"></i> <span class="nav-label">الصفحة الرئيسية</span></a>
+              
+            </li>
+            <li>
+                <a href="MangementNewsAndEvents.html"><i class="fa fa-tasks"></i><span class="nav-label">ادارة الاخبار و الفعاليات</span> </a>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-pencil-square-o"></i><span class="nav-label">كتابة خبر / فعالية</span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-pencil"></i>  <span class="nav-label">تعديل خبر / فعالية</span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-calendar"></i><span class="nav-label">الطلبات</span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-tasks"></i><span class="nav-label"> ادارة البيانات-البحث والتقارير</span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-pencil"></i> <span class="nav-label">تعديل البيانات</span></a>
+               
+            </li> 
+            <li>
+                <a href="#"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">تسجيل البيانات</span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-check-square-o"></i> <span class="nav-label"> اعتماد بيانات المستخدمين</span></a>
+               
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-envelope-o"></i><span class="nav-label"> الرسائل</span></a>
+               
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-graduation-cap"></i><span class="nav-label">  منصة خريج </span></a>
+               
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-id-card-o"></i><span class="nav-label"> ادارة بطاقة خريج </span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-file-text"></i> <span class="nav-label"> عرض التقارير </span></a>
+               
+            </li>
+          
+
+    </div>
+</nav>
+
+<div id="page-wrapper" class="gray-bg">
+<div class="row border-bottom">
+    <nav class="IUstyle navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right IUstyle">
+            <li>
+                <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a class="dropdown-item float-left" href="profile.html">
+                                <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                            </a>
+                            <div class="media-body">
+                                <small class="float-right">46h ago</small>
+                                <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a class="dropdown-item float-left" href="profile.html">
+                                <img alt="image" class="rounded-circle" src="img/a4.jpg">
+                            </a>
+                            <div class="media-body ">
+                                <small class="float-right text-navy">5h ago</small>
+                                <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a class="dropdown-item float-left" href="profile.html">
+                                <img alt="image" class="rounded-circle" src="img/profile.jpg">
+                            </a>
+                            <div class="media-body ">
+                                <small class="float-right">23h ago</small>
+                                <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="mailbox.html" class="dropdown-item">
+                                <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="mailbox.html">
+                            <div>
+                                <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="profile.html">
+                            <div>
+                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                <span class="float-right text-muted small">12 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="grid_options.html">
+                            <div>
+                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="notifications.html">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">
+                    تسجيل الخروج
+                    <i class="fa fa-sign-out"></i> </a>
+            </li>
+
+    </nav>
+</div>
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2> إدارة بطاقة خريج</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">الرئيسية</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>  إدارة بطاقة خريج</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+
+<div class="input-group">
+    <input type="search" class="form-control  mb-2" id="myInput" onkeyup="myFunction()"
+        placeholder="  يمكنك البحث الجدول  " aria-label="Search" aria-describedby="search-addon" />
+</div>
+    
+        <div class="table-responsive">
+            <div id="ManageCard"></div>
+
+            </div>
+                        
+    </div>
+         
+    <footer >
+        <div class="footer " >
+    
+            <div class="row class d-flex justify-content-center justify-content-lg-between  border-bottom">
+            
+            
+                 <div class="footer-col">
+         
+                         <h4 class="text-center" >عن الجامعة</h4>
+                         <ul>
+                             <li><i class="fa fa-angle-double-left"></i><a href="https://iu.edu.sa/iuvr/islamic-univ.html">جولة افتراضية </a></li>
+                             <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/site_page/20252">الانظمة واللوائح</a></li>
+                             <li><i class="fa fa-angle-double-left"></i></i></i><a href="https://emp.iu.edu.sa">التوظيف</a></li>
+                             <li><i class="fa fa-angle-double-left"></i></i><a href="https://directory.iu.edu.sa/"> دليل الهاتف</a></li>
+                            
+                         </ul>
+                     </div>
+         
+              
+                 <div class="footer-col">
+                         <h4 class="text-center">  التسجيل في الجامعة</h4>
+                         <ul>
+                              <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=graduationDocAr">التسجيل في الجامعة  </a></li>
+                             <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=academicCalendar">التقويم الاكاديمي  </a></li>
+                             <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=facultiesMajors">الخطط الدراسية </a></li>
+                           <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=graduationDocAr">التحقق من وثيقة التخرج</a></li>
+                            
+         
+                         </ul>
+                     </div>
+         
+         
+                 <div class="footer-col">
+                         <h4 class="text-center "> دعم فني</h4>
+                         <ul>
+                             <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/site_page/22204">نظام تواصل </a></li>
+                             <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/site_Page/21572">تقنية المعلومات </a></li>
+                             <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/Page/index/20839"> سياسة امن المعلومات  </a></li>
+         
+                         </ul>
+                     </div>
+         
+         
+         
+         
+         
+                 <div class="footer-col">
+                         <h4 class="text-center"> إتصل بنا </h4>
+                         <ul class="contactus">
+                             <li><i class="fa fa-volume-control-phone mr-2"></i> <a href="tel:920022042"> الهاتف </a></li>
+                             <li><i class="fa fa-map-marker mr-2"></i><a href="https://goo.gl/maps/t1Jtvs2BZVSRtJPRA">     Google Map        </a></li>
+                             <li>
+                                 <i class="fa fa-envelope-open mr-2" aria-hidden="true" ></i>  <a href="mailto:@iu.edu.sa">البريد الالكتروني</a></li>
+                             <li><i class="fa fa-globe mr-2" ></i><a href="#">  تحميل دليل المواقع </a></li>
+                         </ul>
+         
+                     </div>
+         
+                     <div class="footer-col">
+                         <h6 class="text-center">  تابعنا عبر مواقع التواصل الاجتماعي</h6>
+                         <ul class="socialicons">
+                             <li class="facebook"><a href="#" title="facebook"><i class="fa fa-facebook-square"></i></a></li>
+                             <li class="twitter"><a href="#" title="Twitter"><i class="fa fa-twitter-square"></i> </a></li>
+                             <li class="youtube"><a href="#" title="Youtube channel"><i class="fa fa-youtube-square"></i></i></a></li>
+                             <li class="flickr"><a href="#" title="flickr"><i class="fa fa-flickr"></i></a></li>
+                         </ul>
+                     </div>
+         
+         
+         
+         </div>
+             <div class="float-left" >
+                <strong>جميع الحقوق محفوظة </strong> | الجامعة الإسلامية بالمدينة المنورة    &copy; 2021
+           
+                
+             </div>
+             <div class="float-right">
+                <a href="#">سياسة الخصوصة </a> / <a href="#"> أنظمة ولوائح  </a>
+             </div>
+         </div>
+         
+        </footer> 
+    
+    </div>
+
+</div>
+
+</div>
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/jquery-3.1.1.min.js"></script>
+<script src="https://publications.iu.edu.sa/lib/jquery-migrate/jquery-migrate.js"></script>
+
+
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/popper.min.js"></script>
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/bootstrap.js"></script>
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/jquery-ui/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/jtable/jquery.jtable.js"></script>
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/jQuery-Validation-Engine-3.1.0/js/jquery.validationEngine.min.js"></script>
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/jQuery-Validation-Engine-3.1.0/js/languages/jquery.validationEngine-en.js"></script>
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/jtable/localization/jquery.jtable.ar.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/inspinia.js"></script>
+<script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/pace/pace.min.js"></script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#ManageCard').jtable({
+            title: '  جدول العروض',
+            paging: true, //Enable paging
+            sorting: true, //Enable sorting
+            columnResizable: false, //Disable column resizing
+            columnSelectable: false, //Disable column selecting
+            defaultSorting: 'Name ASC',
+            openChildAsAccordion: true,
+            actions: {
+                listAction: function(){ 
+                    return {"Result":"OK","Records":[{"numberforitem":1,"category":"مختبر انيس الطبي","clause":"طبي","measruing":"المدينة المنورة","number":"40%","details":""},{"numberforitem":2,"category":"مجمع داما الطبي العام","clause":"طبي","measruing":"المدينة المنورة","number":"50%","details":""},{"numberforitem":3,"category":"شركة الثوب العالمي (لي رويال)","clause":"متجر","measruing":"المدينة المنورة – جدة","number":"40%-20%","details":""},{"numberforitem":4,"category":"مستشفى المواساة","clause":"طبي","measruing":" المدينة المنورة","number":"تصل الى 20%","details":""},{"numberforitem":5,"category":"مركز الأمراء للعناية بالرجل","clause":"عناية","measruing":"المدينة المنورة","number":"50%","details":""},{"numberforitem":6,"category":"مستشفى الدار","clause":"طبي","measruing":"المدينة المنورة","number":"تصل الى 50%","details":""},{"numberforitem":7,"category":"  مجمع الثقات الطبي العام","clause":"طبي","measruing":"المدينة المنورة","number":"تصل لى 40%","details":""},{"numberforitem":8,"category":"مجمع الثقات الطبي العام	","clause":"طبي","measruing":"المدينة المنورة","number":"تصل الى 40%","details":""},{"numberforitem":9,"category":"  شركة أفيس لتأجير السيارات","clause":"سيارات","measruing":" كافة فروع المملكة","number":"تصل إلى 58%","details":""},]};
+                    },
+                    
+                deleteAction: '/Demo/DeleteStudent',
+                updateAction: '/Demo/UpdateStudent',
+                createAction: '/Demo/CreateStudent'
+            },
+         
+            fields: {
+                itemid: {
+                    key: true,
+                    create: false,
+                    edit: false,
+                    list: false
+                },
+                
+              
+                numberforitem: {
+                    title: 'م',
+                    width: '5%',
+                    inputClass: 'validate[required]'
+                },
+                category: {
+                    title: 'الشركة',
+                    width: '20%',
+                    inputClass: 'validate[required]'
+                },
+                clause: {
+                    title: 'القطاع',
+                               
+                  type: 'text',
+                    inputClass: 'validate[required]'
+                },
+                
+                measruing: {
+                    title: '  المدينة',
+                    type: 'text',
+                    inputClass: 'validate[required]'
+               
+                
+                },
+                number: {
+                    title: 'نسبة الخصم',
+                    width: '11%',
+                    type: 'number',
+                },
+                details: {
+                    title: 'تفاصيل الطلب ',
+                    width: '15%',
+                    type: 'text',
+                    inputClass: 'validate[required]'
+                },
+               
+           
+            
+            },
+            formCreated: function (event, data) {
+                data.form.validationEngine();
+            },
+            formSubmitting: function (event, data) {
+                return data.form.validationEngine('validate');
+            },
+            formClosed: function (event, data) {
+                data.form.validationEngine('hide');
+                data.form.validationEngine('detach');
+            }
+        });
+
+        //Load person list from server
+        $('#ManageCard').jtable('load');
+
+        //Select current theme on combobox
+        $('#ThemeCombobox').val('metro/blue/jtable.css');
+
+        //Change theme when chaned combobox
+        $('#ThemeCombobox').change(function () {
+            location.href = '/?jTableStyle=' + $('#ThemeCombobox').val();
+        });
+    });
+
+</script>
+<script> 
+    function myFunction() {
+       var input, filter, table, tr, td1,td2 ,i,txtValue0,txtValue1;
+       input = document.getElementById("myInput");
+       filter = input.value.toUpperCase();
+       table = document.getElementById("ManageCard");
+       tr = table.getElementsByTagName("tr");
+       for (i = 0; i < tr.length; i++) {
+         td1 = tr[i].getElementsByTagName("td")[0];
+         td2 = tr[i].getElementsByTagName("td")[1];
+     if(td1||td2){
+         txtValue0 = td1.textContent || td1.innerText;
+         txtValue1 = td2.textContent || td2.innerText;
+     
+           if (txtValue0.toUpperCase().indexOf(filter) > -1 ||  txtValue1.toUpperCase().indexOf(filter) > -1 ){
+      
+           tr[i].style.display = "";
+           }
+           else {
+             tr[i].style.display = "none";
+           }
+         }       
+       }
+     
+     }
+    
+    </script> 
+<style>
+    @media (min-width:320px)  { footer {position:relative !important; padding-top: 215%; } }
+    @media (min-width:480px)  { footer {position:relative !important; padding-top: 95%;} }
+    @media (min-width:600px)  { footer {position:relative !important; } }
+    @media (min-width:768px)  { footer {position:relative !important; padding-top: 45%; } }    
+    @media (min-width:1280px)  { footer {position:relative !important; padding-top: 25%; } }    
+    
+    
+    #page-wrapper{
+    padding: 0px !important;
+    }
+    .row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    }
+    </style>
+</body>
+
+</html>

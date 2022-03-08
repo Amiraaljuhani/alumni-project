@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تحديث بيانات طالب خريج</title>
+
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/plugins/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/animate.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/style.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="rtls">
+
+<div id="wrapper">
+
+<nav class="IUstyle navbar-default navbar-static-side " role="navigation">
+    <div class="sidebar-collapse mt-5">
+        <ul class="nav metismenu" id="side-menu">
+					
+
+            <li>
+                <a href="index.html"><i class="fa fa-home"></i> <span class="nav-label">الصفحة الرئيسية</span></a>
+              
+            </li>
+            <li >
+                <a href="updatedata.html"><i class="fa fa-refresh"></i><span class="nav-label">تحديث البيانات</span> </a>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-calendar"></i><span class="nav-label">عرض الطلبات</span></a>
+               
+            </li>
+        
+            <li>
+                <a href="#"><i class="fa fa-graduation-cap"></i> <span class="nav-label">منصة خريج</span></a>
+              
+            </li>
+           
+            <li>
+                <a href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i> <span class="nav-label">بطاقة خريج</span></a>
+              
+            </li>
+  
+            <li>
+                <a href="#"><i class="fa fa-key"></i><span class="nav-label"> تغيير كلمة المرور</span></a>
+            </li>
+            
+        </ul>
+
+    </div>
+</nav>
+
+<div id="page-wrapper" class="gray-bg">
+<div class="row border-bottom">
+    <nav class="IUstyle navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" ="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right IUstyle">
+            <li><div class="dropdown">
+              <button data-toggle="dropdown" class="btn  dropdown-toggle" aria-expanded="true"><i class="fa fa-search"></i></button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <form role="search" class="navbar-form-custom" action="search_results.html">
+                  <div class="from-group">
+                      <input type="text" placeholder="...ضع كلمة البحث هنا " class="form-control" name="top-search" id="top-search">
+                  </div>
+              </form>
+              </div>
+            </div></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a class="dropdown-item float-left" href="profile.html">
+                                <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                            </a>
+                            <div class="media-body">
+                                <small class="float-right">46h ago</small>
+                                <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a class="dropdown-item float-left" href="profile.html">
+                                <img alt="image" class="rounded-circle" src="img/a4.jpg">
+                            </a>
+                            <div class="media-body ">
+                                <small class="float-right text-navy">5h ago</small>
+                                <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a class="dropdown-item float-left" href="profile.html">
+                                <img alt="image" class="rounded-circle" src="img/profile.jpg">
+                            </a>
+                            <div class="media-body ">
+                                <small class="float-right">23h ago</small>
+                                <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="mailbox.html" class="dropdown-item">
+                                <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="mailbox.html">
+                            <div>
+                                <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="profile.html">
+                            <div>
+                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                <span class="float-right text-muted small">12 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="grid_options.html">
+                            <div>
+                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="notifications.html">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+<li>
+                  <a href="">
+                      تسجيل الخروج
+                      <i class="fa fa-sign-out"></i> </a>
+              </li>
+
+    </nav>
+</div>
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2 class="text-center">تحديث بيانات طالب خريج</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">الرئيسية</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>تحديث بيانات طالب خريج</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight" >
+      <!-- My Content  -->
+
+
+<form role="form" role="form" id="updateData" class="row  " action="#">
+    <div class="container-fluid mt-3">
+
+        <fieldset>
+            <legend class="text-white text-center" style="background-color:#005a85;"><strong> البيانات الاساسية</strong></legend>
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label><span>الاسم الأول:</span></label>
+                        <input type="text" class="form-control " id="FiName" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label><span>اسم الجد:</span></label>
+                        <input type="text" class="form-control " id="GfName" disabled>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label><span>اسم الاب:</span></label>
+                        <input type="text" class="form-control  " id="FaName" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label><span>اسم العائلة:</span></label>
+                        <input type="text" class="form-control   "id="FamilyName" disabled>
+                    </div>
+                </div>
+            </div>
+
+
+<div class="col-md-12"></div>
+<h3 class="text-danger text-center">كتابة الاسم كما هو مسجل في جواز السفر</h3>
+<div class="row justify-content-center">
+    <div class="w-100"></div>
+    <div class="col-lg-4">
+        <div class="form-group">
+            <label><span>الاسم الأول:</span></label>
+            <input type="text" class="form-control "id="FiNameAsPassport" disabled>
+        </div>
+        <div class="form-group">
+            <label> <span>اسم الجد:</span></label>
+            <input type="text" class="form-control "id="GaNameAsPassport" disabled>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="form-group">
+            <label><span>اسم الاب:</span></label>
+            <input type="text" class="form-control "id="FaNameAsPassport" disabled>
+        </div>
+        <div class="form-group">
+            <label><span>اسم العائلة:</span></label>
+            <input type="text" class="form-control "id="FamilyNameAsPassport" disabled>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="w-100"></div>
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label><span>الجنسية:</span></label>
+                <select id="Nationality" class="form-control" disabled="disabled">
+                    <option value="registered">مسجل</option>
+                    <option value="saudi">سعودي</option>
+                    <option value="sudaness">سوداني</option>
+                    <option value="egyptian">مصري</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><span>الكلية:</span></label>
+                <select id="college" class="form-control" disabled>
+                    <option value="registered">مسجل</option>
+                    <option value="computerSeiencesCollege">كلية علوم الحاسب</option>
+                    <option value="QuranCollege">كلية القران</option>
+                    <option value="seiencesCollege">كلية العلوم</option>
+                    <option value="engineerCollege">كلية الهندسة</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><span>البريد الالكتروني:</span></label> 
+                <input type="email" id="email" class="form-control" disabled>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label><span>المؤهل من داخل الجامعة:</span></label> 
+                <select id="qualificationFromUni" class="form-control" disabled>
+                    <option value="">مسجل</option>
+                    <option value="Diploma">دبلوم</option>
+                    <option value="Bachelor">بكالورويس</option>
+                    <option value="Master's">ماجستير</option>
+                    <option value="PhD">دكتوراة</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><span>رقم الهاتف:</span></label> 
+                <input type="tel" id="phone" class="form-control" disabled>
+            </div>
+            <br>
+            <div class="form-group col-lg-offset-6">
+                <div class="input-group-btn  ">
+                    <button type="button" class="btn btn-w-m btn-primary col-lg-12" id="requestUpdate"><i class="fa fa-cogs"></i> <strong>رفع طلب تحديث بيانات
+                            اساسية</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <legend class="text-white text-center" style="background-color:#005a85;"><strong> بيانات أخرى </strong></legend>
+        <div class="row justify-content-center">
+            <div class="w-100"></div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <label> <span>رقم الواتسب:</span></label>
+                    <input type="number" class="form-control" id="whatsappNumber">
+                </div>
+                <div class="form-group">
+                    <label> <span>جهة العمل:</span></label>
+                    <input type="text" class="form-control" id="aboutCompany">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <label> <span>منصب قيادي عملت به:</span></label>
+                    <input type="text" class="form-control" id="aboutPosition">
+                </div>
+                <div class="form-group">
+                    <label> <span>البيانات الوظيفية:</span></label>
+                    <input type="text" class="form-control" id="aboutWork">
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label> <span>رقم الجوال:</span></label>
+                        <input type="number" class="form-control ">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label><span>المؤهل من خارج الجامعة:</span></label> 
+                        <select id="qualificationWithoutUni" class="form-control">
+                            <option value="choose">اختر</option>
+                            <option value="Diploma">دبلوم</option>
+                            <option value="Bachelor">بكالوريوس </option>
+                            <option value="Master's">ماجستير</option>
+                            <option value="PhD">دكتوراة</option>
+                            <option value="Prof">بروفيسور</option>
+                        </select>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                    <div class="form-group ">
+                        <label> <span> المهارات والخبرات المكتسبة:</span></label>
+                        <textarea rows="6" cols="5" class="form-control" id="skills"> </textarea>
+                    </div>
+                </div>
+                <div class="row align-items-start">
+                    <div class="infont p-5">
+                        <i class="fa fa-user-circle-o " aria-hidden="true"></i> <label class="" for="img"><strong>اضافة صورة:</strong></label>
+                        <input type="file" id="img" name="img" accept="image/*">
+                    </div>
+                </div>
+                <div class="form-group">
+                        <button class="btn btn-lg btn-success col-sm-offset-2 col-sm-2" type="submit"id="updateData"><i class="fa fa-check-square-o"></i> <strong> تحديث البيانات</strong></button>
+                    </div>
+                </div>
+            </div>
+</fieldset>
+</div>
+</form>    
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               
+
+
+                                 
+
+                    
+    
+
+    
+    
+    
+    
+            <footer >
+                <div class="footer" >
+ 
+                    <div class="row class d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                    
+                    
+                         <div class="footer-col">
+                 
+                                 <h4 class="text-center" >عن الجامعة</h4>
+                                 <ul>
+                                     <li><i class="fa fa-angle-double-left"></i><a href="https://iu.edu.sa/iuvr/islamic-univ.html">جولة افتراضية </a></li>
+                                     <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/site_page/20252">الانظمة واللوائح</a></li>
+                                     <li><i class="fa fa-angle-double-left"></i></i></i><a href="https://emp.iu.edu.sa">التوظيف</a></li>
+                                     <li><i class="fa fa-angle-double-left"></i></i><a href="https://directory.iu.edu.sa/"> دليل الهاتف</a></li>
+                                    
+                                 </ul>
+                             </div>
+                 
+                      
+                         <div class="footer-col">
+                                 <h4 class="text-center">  التسجيل في الجامعة</h4>
+                                 <ul>
+                                      <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=graduationDocAr">التسجيل في الجامعة  </a></li>
+                                     <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=academicCalendar">التقويم الاكاديمي  </a></li>
+                                     <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=facultiesMajors">الخطط الدراسية </a></li>
+                                   <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=graduationDocAr">التحقق من وثيقة التخرج</a></li>
+                                    
+                 
+                                 </ul>
+                             </div>
+                 
+                 
+                         <div class="footer-col">
+                                 <h4 class="text-center "> دعم فني</h4>
+                                 <ul>
+                                     <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/site_page/22204">نظام تواصل </a></li>
+                                     <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/site_Page/21572">تقنية المعلومات </a></li>
+                                     <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/Page/index/20839"> سياسة امن المعلومات  </a></li>
+                 
+                                 </ul>
+                             </div>
+                 
+                 
+                 
+                 
+                 
+                         <div class="footer-col">
+                                 <h4 class="text-center"> إتصل بنا </h4>
+                                 <ul class="contactus">
+                                     <li><i class="fa fa-volume-control-phone mr-2"></i> <a href="tel:920022042"> الهاتف </a></li>
+                                     <li><i class="fa fa-map-marker mr-2"></i><a href="https://goo.gl/maps/t1Jtvs2BZVSRtJPRA">     Google Map        </a></li>
+                                     <li>
+                                         <i class="fa fa-envelope-open mr-2" aria-hidden="true" ></i>  <a href="mailto:@iu.edu.sa">البريد الالكتروني</a></li>
+                                     <li><i class="fa fa-globe mr-2" ></i><a href="#">  تحميل دليل المواقع </a></li>
+                                 </ul>
+                 
+                             </div>
+                 
+                             <div class="footer-col">
+                                 <h6 class="text-center">  تابعنا عبر مواقع التواصل الاجتماعي</h6>
+                                 <ul class="socialicons">
+                                     <li class="facebook"><a href="#" title="facebook"><i class="fa fa-facebook-square"></i></a></li>
+                                     <li class="twitter"><a href="#" title="Twitter"><i class="fa fa-twitter-square"></i> </a></li>
+                                     <li class="youtube"><a href="#" title="Youtube channel"><i class="fa fa-youtube-square"></i></i></a></li>
+                                     <li class="flickr"><a href="#" title="flickr"><i class="fa fa-flickr"></i></a></li>
+                                 </ul>
+                             </div>
+                 
+                 
+                 
+                 </div>
+                     <div class="float-left" >
+                        <strong>جميع الحقوق محفوظة </strong> | الجامعة الإسلامية بالمدينة المنورة    &copy; 2021
+                   
+                        
+                     </div>
+                     <div class="float-right">
+                        <a href="#">سياسة الخصوصة </a> / <a href="#"> أنظمة ولوائح  </a>
+                     </div>
+                 </div>
+                </footer> 
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+<!-- Mainly scripts -->
+<script src="https://cdn.iu.edu.sa/theme/INSPINIA.2.4.9/js/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.iu.edu.sa/theme/INSPINIA.2.4.9/js/popper.min.js"></script>
+<script src="https://cdn.iu.edu.sa/theme/INSPINIA.2.4.9/js/bootstrap.js"></script>
+<script src="https://cdn.iu.edu.sa/theme/INSPINIA.2.4.9/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="https://cdn.iu.edu.sa/theme/INSPINIA.2.4.9/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="https://cdn.iu.edu.sa/theme/INSPINIA.2.4.9/js/inspinia.js"></script>
+<script src="https://cdn.iu.edu.sa/theme/INSPINIA.2.4.9/js/plugins/pace/pace.min.js"></script>
+
+<!-- Steps -->
+<script src="https://cdn.iu.edu.sa/theme/INSPINIA.2.4.9/js/plugins/steps/jquery.steps.min.js"></script>
+
+<!-- Jquery Validate -->
+<script src="https://cdn.iu.edu.sa/theme/INSPINIA.2.4.9/js/plugins/validate/jquery.validate.min.js"></script>
+
+<style>
+    @media (min-width:320px)  { footer {position:relative !important; padding-top: 215%; } }
+@media (min-width:480px)  { footer {position:relative !important; padding-top: 95%;} }
+@media (min-width:600px)  { footer {position:relative !important; } }
+@media (min-width:768px)  { footer {position:relative !important; padding-top: 45%; } }    
+@media (min-width:1280px)  { footer {position:relative !important; padding-top: 25%; } }    
+
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+    .footer-col ul li{
+list-style-type: none;
+}
+
+#page-wrapper{
+padding: 0px !important;
+}
+.row{
+margin-left: 0px !important;
+margin-right: 0px !important;
+}
+
+</style>
+  
+
+</body>
+</html>

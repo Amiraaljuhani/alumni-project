@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ادارة الاخبار و الفعاليات</title>
+
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/plugins/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/animate.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/style.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/custom.css" rel="stylesheet">
+    <link href="https://cdn.iu.edu.sa/iu-v.2.9.3/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="rtls">
+
+<div id="wrapper">
+
+<nav class="IUstyle navbar-default navbar-static-side  mt-5" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+					
+
+            <li>
+                <a href=""><i class="fa fa-home"></i> <span class="nav-label">الصفحة الرئيسية</span></a>
+              
+            </li>
+            <li>
+                <a href="MangementNewsAndEvents.html"><i class="fa fa-tasks"></i><span class="nav-label">ادارة الاخبار و الفعاليات</span> </a>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-pencil-square-o"></i><span class="nav-label">كتابة خبر / فعالية</span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-pencil"></i>  <span class="nav-label">تعديل خبر / فعالية</span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-calendar"></i><span class="nav-label">الطلبات</span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-tasks"></i><span class="nav-label"> ادارة البيانات-البحث والتقارير</span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-pencil"></i> <span class="nav-label">تعديل البيانات</span></a>
+               
+            </li> 
+            <li>
+                <a href="#"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">تسجيل البيانات</span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-check-square-o"></i> <span class="nav-label"> اعتماد بيانات المستخدمين</span></a>
+               
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-envelope-o"></i><span class="nav-label"> الرسائل</span></a>
+               
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-graduation-cap"></i><span class="nav-label">  منصة خريج </span></a>
+               
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-id-card-o"></i><span class="nav-label"> ادارة بطاقة خريج </span></a>
+               
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-file-text"></i> <span class="nav-label"> عرض التقارير </span></a>
+               
+            </li>
+          
+
+    </div>
+</nav>
+
+<div id="page-wrapper" class="gray-bg">
+<div class="row border-bottom">
+    <nav class="IUstyle navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right IUstyle">
+            <li>
+                <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a class="dropdown-item float-left" href="profile.html">
+                                <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                            </a>
+                            <div class="media-body">
+                                <small class="float-right">46h ago</small>
+                                <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a class="dropdown-item float-left" href="profile.html">
+                                <img alt="image" class="rounded-circle" src="img/a4.jpg">
+                            </a>
+                            <div class="media-body ">
+                                <small class="float-right text-navy">5h ago</small>
+                                <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a class="dropdown-item float-left" href="profile.html">
+                                <img alt="image" class="rounded-circle" src="img/profile.jpg">
+                            </a>
+                            <div class="media-body ">
+                                <small class="float-right">23h ago</small>
+                                <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="mailbox.html" class="dropdown-item">
+                                <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="mailbox.html">
+                            <div>
+                                <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="profile.html">
+                            <div>
+                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                <span class="float-right text-muted small">12 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="grid_options.html">
+                            <div>
+                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="notifications.html">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">
+                    تسجيل الخروج
+                    <i class="fa fa-sign-out"></i> </a>
+            </li>
+
+    </nav>
+</div>
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>ادارة الاخبار والفعاليات</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">الرئيسية</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>ادارة الاخبار والفعاليات</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+
+
+<div class="wrapper wrapper-content animated fadeInRight">
+      <!-- My Content  -->
+
+
+
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover dataTables-example" >
+            <thead>
+                <tr>
+                    <th>رقم</th>
+                    <th>عنوان الرسالة</th>
+                    <th>فتح الرسالة </th>
+                    <th>تعديل</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>فعالية</td>
+                    <td> <a href="Initiatives.html" target="_blank"> فتح </td>
+                    <td> <a href="EditNewsAndEvents.html" target="_blank"> تعديل  </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>خبر</td>
+                    <td> <a href="News.html" target="_blank"> فتح </td>
+                    <td> <a href="EditNewsAndEvents.html" target="_blank"> تعديل  </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>فعالية</td>
+                    <td> <a href="Initiatives.html" target="_blank"> فتح </td>
+                    <td> <a href="EditNewsAndEvents.html" target="_blank"> تعديل  </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>خبر</td>
+                    <td> <a href="News.html" target="_blank"> فتح </td>
+                    <td> <a href="EditNewsAndEvents.html" target="_blank"> تعديل  </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>خبر</td>
+                    <td> <a href="News.html" target="_blank"> فتح </td>
+                    <td> <a href="EditNewsAndEvents.html" target="_blank"> تعديل  </td>
+                </tr>
+                </tbody>
+        
+        </tfoot>
+        </table>
+            </div>
+
+
+    <div class="form-group ">
+        <div class="input-group-btn col-lg-offset-5 ">
+            <a href="WriteNewsAndEvents.html"><button type="button" class="btn btn-w-m btn-outline-primary col-lg-4 "><i class="fa fa-edit"></i> <strong>  اضافة خبر  / فعالية </strong></button></a>
+        </div>
+    </div>
+
+
+
+
+</div>
+<div class="footer" >
+         
+   <div class="row class d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+   
+   
+        <div class="footer-col">
+
+                <h4 class="text-center" >عن الجامعة</h4>
+                <ul>
+                    <li><i class="fa fa-angle-double-left"></i><a href="https://iu.edu.sa/iuvr/islamic-univ.html">جولة افتراضية </a></li>
+                    <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/site_page/20252">الانظمة واللوائح</a></li>
+                    <li><i class="fa fa-angle-double-left"></i></i></i><a href="https://emp.iu.edu.sa">التوظيف</a></li>
+                    <li><i class="fa fa-angle-double-left"></i></i><a href="https://directory.iu.edu.sa/"> دليل الهاتف</a></li>
+                   
+                </ul>
+            </div>
+
+     
+        <div class="footer-col">
+                <h4 class="text-center">  التسجيل في الجامعة</h4>
+                <ul>
+                     <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=graduationDocAr">التسجيل في الجامعة  </a></li>
+                    <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=academicCalendar">التقويم الاكاديمي  </a></li>
+                    <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=facultiesMajors">الخطط الدراسية </a></li>
+                  <li><i class="fa fa-angle-double-left"></i></i><a href="https://eduportal.iu.edu.sa/iu/init?service=graduationDocAr">التحقق من وثيقة التخرج</a></li>
+                   
+
+                </ul>
+            </div>
+
+
+        <div class="footer-col">
+                <h4 class="text-center "> دعم فني</h4>
+                <ul>
+                    <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/site_page/22204">نظام تواصل </a></li>
+                    <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/site_Page/21572">تقنية المعلومات </a></li>
+                    <li><i class="fa fa-angle-double-left"></i></i><a href="https://iu.edu.sa/Page/index/20839"> سياسة امن المعلومات  </a></li>
+
+                </ul>
+            </div>
+
+
+
+
+
+        <div class="footer-col">
+                <h4 class="text-center"> إتصل بنا </h4>
+                <ul class="contactus">
+                    <li><i class="fa fa-volume-control-phone mr-2"></i> <a href="tel:920022042"> الهاتف </a></li>
+                    <li><i class="fa fa-map-marker mr-2"></i><a href="https://goo.gl/maps/t1Jtvs2BZVSRtJPRA">     Google Map        </a></li>
+                    <li>
+                        <i class="fa fa-envelope-open mr-2" aria-hidden="true" ></i>  <a href="mailto:@iu.edu.sa">البريد الالكتروني</a></li>
+                    <li><i class="fa fa-globe mr-2" ></i><a href="#">  تحميل دليل المواقع </a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-col">
+                <h6 class="text-center">  تابعنا عبر مواقع التواصل الاجتماعي</h6>
+                <ul class="socialicons">
+                    <li class="facebook"><a href="#" title="facebook"><i class="fa fa-facebook-square"></i></a></li>
+                    <li class="twitter"><a href="#" title="Twitter"><i class="fa fa-twitter-square"></i> </a></li>
+                    <li class="youtube"><a href="#" title="Youtube channel"><i class="fa fa-youtube-square"></i></i></a></li>
+                    <li class="flickr"><a href="#" title="flickr"><i class="fa fa-flickr"></i></a></li>
+                </ul>
+            </div>
+
+
+
+</div>
+    <div class="float-right">
+        <a href="#">سياسة الخصوصة </a> / <a href="#"> أنظمة ولوائح  </a>
+    </div>
+    <div>
+        <strong>جميع الحقوق محفوظة </strong> | الجامعة الإسلامية بالمدينة المنورة    &copy; 2021
+    </div>
+</div>
+
+</div>
+</div>
+
+
+
+    <!-- Mainly scripts -->
+    <script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/popper.min.js"></script>
+    <script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/bootstrap.js"></script>
+    <script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/dataTables/datatables.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/inspinia.js"></script>
+    <script src="https://cdn.iu.edu.sa/iu-v.2.9.3/js/plugins/pace/pace.min.js"></script>
+    <script src="https://cdn.iu.edu.sa/iu-v.2.9.3/plugins/dataTables/datatables.min.js"></script>
+
+    <!-- Page-Level Scripts -->
+    <script>
+        $(document).ready(function(){
+            $('.dataTables-example').DataTable({
+                pageLength: 25,
+                responsive: true,
+                dom: '<"html5buttons"B>lTfgitp',
+                buttons: [
+                    { extend: 'copy'},
+                    {extend: 'csv'},
+                    {extend: 'excel', title: 'ExampleFile'},
+                    {extend: 'pdf', title: 'ExampleFile'},
+
+                    {extend: 'print',
+                     customize: function (win){
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
+
+                            $(win.document.body).find('table')
+                                    .addClass('compact')
+                                    .css('font-size', 'inherit');
+                    }
+                    }
+                ]
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
